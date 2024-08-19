@@ -42,7 +42,7 @@ class Lesson(models.Model):
     )
 
     # TODO
-
+    course = models.ForeignKey(Course, on_delete=models.CASCADE)
     class Meta:
         verbose_name = 'Урок'
         verbose_name_plural = 'Уроки'
