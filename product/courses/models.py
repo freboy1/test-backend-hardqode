@@ -19,7 +19,7 @@ class Course(models.Model):
     )
 
     # TODO
-
+    price = models.PositiveIntegerField()
     class Meta:
         verbose_name = 'Курс'
         verbose_name_plural = 'Курсы'
